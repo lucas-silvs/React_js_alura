@@ -5,7 +5,7 @@ const CampoTexto = (props) => {
         <div className='campo-texto'>
             {/* Ṕassando parametro recebido na chamada do componente e utilizando no HTML */}
             <label>{props.label}</label>
-            <input placeholder={props.placeholder}/>
+            <input required={props.obrigatorio} placeholder={props.placeholder}/>
         </div>
     )
 }
