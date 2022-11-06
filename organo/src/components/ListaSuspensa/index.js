@@ -12,7 +12,7 @@ const ListaSuspensa = (props) => {
             <select onChange={aoAlterado} required={props.obrigatorio} value={props.valor}>
                 {/* for each onde para cada item é criado um item de option */}
                 {/* adicionando chave para o react saber quando precisar qual item gerar*/}
-                {props.itens.map(item => <option key={item}> {item}</option>)}
+                {props.itens.map(item => <option key={item.nome}> {item.nome}</option>)}
             </select>
         </div>
     )
